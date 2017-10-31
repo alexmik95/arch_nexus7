@@ -1,37 +1,17 @@
-## Welcome to GitHub Pages
+# INSTALL ARCHLINUX ON NEXUS 7 (GROUPER) WITH MULTIROM
 
-You can use the [editor on GitHub](https://github.com/alexmik95/hello-world/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+This guide target to native install archlinux on nexus 7 2012 with multirom as bootloader:
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+1. Download latest release for nvidia trimslice from archlinux ARM repository.
+2. Organize all files like a .mrom multirom installation package:
+  archlinuxN7.mrom -> /rom/root.tar.gz /root-dir/rom_info.txt /post_install/01_copyfiles.sh /manifest.txt
+  It's a simple zip archive renamed .mrom to be installed in twrp recovery.
+3. Copy the archive on system memory
+4. Reboot in recovery e go in multirom option, add rom and select the .mrom file path.
+5. Reboot system and boot in archlinux fresh installed.
 
-### Markdown
+At present time it install and boot but fail initial check and reboot system
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### TO DO: find a method to generate intrd.img and vmlinuz.img
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/alexmik95/hello-world/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+credits to tassadar for multirom project
