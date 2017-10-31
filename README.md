@@ -14,4 +14,8 @@ At present time it install and boot but fail initial check and reboot system
 
 ### TO DO: find a method to generate intrd.img and vmlinuz.img
 
+Usefull links:
+- https://github.com/Tasssadar/multirom/tree/master/installer
+- https://docs.google.com/document/d/1G9vF5v2TN2c6ocyb_hmD1ve7OK4GdCP84rfaXgiLmB4/mobilebasic#h.vqr6yts8r1i6
+
 credits to tassadar for multirom project
